@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Abdul Wahid Hussain</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Abdul -logos_white.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer.
+                    Software Tester
+                </p>
+                <h1>
+                    HI, I'm <span>Abdul</span> <br>from Delhi
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="abdul.JPG" alt="pic" class="pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        I am a little creative person I like to find new & creative ways to tackle a particular problem. Am able to handle multiple tasks on   a daily basis and  also very good at time management am always energetic and eager to learn new skills as being in college I have also experience working as part of a team and individually.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skils')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer web interfaces</li>
+                            <li><span>Web developer</span><br>Web application developer</li>
+                            <li><span>Software tester</span><br>Testing Softwares & making them more realiable</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>july 22 - august 22</span><br>Worked on django using python</li>
+                            <li><span>2019 - current</span><br>Accountent cum Social media manager</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>Persuing B.C.A from I.P.U</li>
+                            <li><span>2019 - 2020</span><br>Intermidiate from C.B.S.E</li>
+                            <li><span>2018 - 2019</span><br>Heighschool from C.B.S.E</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
