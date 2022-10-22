@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
     <title>Abdul Wahid Hussain</title>
 </head>
 <body>
@@ -69,21 +70,42 @@
             </div>
         </div>
     </div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
+<!-- -----------------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 id="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work_1.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Add your project that you will make or 
+                        gonna make in future.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="work_2.jpg" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Add your project that you will make or 
+                        gonna make in future.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="work_4.jpg" alt="">
+                <div class="layer">
+                    <h3>Any App</h3>
+                    <p>Add your project that you will make or 
+                        gonna make in future.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------contact---------------- -->
 
 </body>
 </html>
