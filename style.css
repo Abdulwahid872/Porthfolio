@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
@@ -23,9 +26,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* position: fixed; */
 }
 .logo{
-    width: 150px;
+    width: 160px;
 }
 nav ul li{
     display: inline;
@@ -35,7 +39,7 @@ nav ul li{
 nav ul li a{
     color: aliceblue;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     position: relative;
 }
 nav ul li a::after{
@@ -84,7 +88,7 @@ nav ul li a:hover::after{
     flex-basis: 65%;
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 600;
     color: white;
 }
@@ -94,7 +98,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -219,6 +223,37 @@ nav ul li a:hover::after{
     color: #fff;
     border-radius: 10px;
     font-weight: 200;
+    cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 200;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.copyright i{
+    color: #ff004f;
+}
