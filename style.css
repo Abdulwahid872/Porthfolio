@@ -10,6 +10,7 @@ html{
 body{
     background: #080808;
     color: #fff;
+    padding: 0px;
 }
 /* we have to put # if ew are using a id */
 #header{
@@ -22,11 +23,13 @@ body{
 }
 /* display flex put everthing side by side */
 nav{
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 10;
 }
 .logo{
     width: 160px;
@@ -56,12 +59,12 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 10%;
-    font-size: 50px;
+    margin-top: 15%;
+    font-size: 60px;
 }
 .header-text h1{
     font-size: 80px;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 .header-text h1 span{
     color: #ff004f;
@@ -191,7 +194,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .contact-left p{
-    margin-top: 30px;
+    margin-top: 90px;
     font-size: 20px;
 }
 .contact-left p i{
@@ -247,7 +250,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright{
-    width: 100%;
+    width: 120%;
     text-align: center;
     padding: 25px 0;
     background-color: #262626;
@@ -262,7 +265,7 @@ form .btn2{
 nav .fa-solid {
     display: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 850px){
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -275,7 +278,11 @@ nav .fa-solid {
         display: block;
         font-size: 25px;
     }
-    nav ul{
+    .right_nv{
+        right: 0;
+    }
+    .sidemenu{
+
         background: #ff004f;
         position: fixed;
         top: 0;

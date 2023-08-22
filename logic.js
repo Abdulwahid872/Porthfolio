@@ -12,10 +12,15 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
+    
+
+    function toggle(){
+        var sid = document.querySelector(".sidemenu");
+        if (sid.style.right == "-200px") {
+            sid.style.right = "0"
+        } else {
+            sid.style.right = "-200px"    
+        }
+        
+        // sid.classList.toggle("right_nv")
     }

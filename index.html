@@ -12,23 +12,23 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="Abdul -logos_white.png" alt="logo" class="logo">
-                <ul id="sidemenu">
+            <nav >
+                <img src="Abdul -logos_white.png" alt="logo" class="logo" onclick="toggle()">
+                <ul class="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-xmark" onclick="toggle()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              
+                 <i class="fa-solid fa-bars" onclick="toggle()" id="open"></i> 
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer.
-                    Software Tester
+                <p>Web Designer, Software Tester, Software Developer.
                 </p>
                 <h1>
-                    HI, I'm <span>Abdul</span> <br>from Delhi
+                    HI, I'm <span>Abdul</span> <br> A pasonate and enthusiast<br> Web developer from Delhi
                 </h1>
             </div>
         </div>
